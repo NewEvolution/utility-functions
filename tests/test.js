@@ -1,7 +1,7 @@
 var expect = require("chai").expect;
 
 describe("Mocha & Chai", function() {
-  it("da_truth", function() {
+  it("true is indeed true", function() {
     expect(true).to.be.true;
   });
 });
