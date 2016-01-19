@@ -1,4 +1,7 @@
-module.exports = function range() {
-  var theArray = [1,2,3];
+module.exports = function range(count) {
+  var theArray = [];
+  for(var i = 0; i < count; ++i) {
+    theArray.push(i);
+  }
   return theArray;
 }

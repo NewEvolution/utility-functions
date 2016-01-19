@@ -30,5 +30,11 @@ describe("utility functions", function() {
     it("range should output an array", function() {
       expect(range()).to.be.an("array");
     });
+
+    it("array should be the length passed as the argument", function() {
+      expect(range()).to.have.length(0);
+      expect(range(1)).to.have.length(1);
+      expect(range(100)).to.have.length(100);
+    });
   });
 });
