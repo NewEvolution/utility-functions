@@ -16,7 +16,7 @@ describe("async tests", function() {
   });
 });
 
-describe("Hello world", function() {
+describe("hello world", function() {
   it("hello should say 'Hello world!'", function() {
     expect(hello()).to.equal("Hello world!");
   });
