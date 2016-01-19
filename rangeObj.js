@@ -1,8 +1,9 @@
-module.exports = function rangeObj(range) {
+module.exports = function rangeObj(start, end) {
   var builtObj = {};
   var rangeMaker = require("./range");
-  for(item in rangeMaker(range)) {
-    builtObj[item] = parseInt(item);
+  var rangeArray = rangeMaker(start, end);
+  for(item in rangeArray) {
+    builtObj[rangeArray[item]] = parseInt(rangeArray[item]);
   }
   return builtObj;
 };
