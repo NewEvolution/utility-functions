@@ -59,5 +59,10 @@ describe("utility functions", function() {
       expect(rangeObj(3)).to.eql({0:0, 1:1, 2:2});
       expect(rangeObj(5)).to.eql({0:0, 1:1, 2:2, 3:3, 4:4});
     });
+
+    it("should accept a start argument", function() {
+      expect(rangeObj(3,5)).to.eql({3:3, 4:4});
+      expect(rangeObj(4,9)).to.eql({4:4, 5:5, 6:6, 7:7, 8:8});
+    });
   });
 });
