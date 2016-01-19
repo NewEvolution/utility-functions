@@ -23,3 +23,12 @@ describe("Hello world", function() {
 });
 
 var hello = require("../index");
+
+describe("utility functions", function() {
+  describe("range", function() {
+    var range = require("../range.js");
+    it("range should output an array", function() {
+      expect(range()).to.be.an("array");
+    });
+  });
+});
