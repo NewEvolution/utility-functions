@@ -36,5 +36,22 @@ describe("utility functions", function() {
       expect(range(1)).to.have.length(1);
       expect(range(100)).to.have.length(100);
     });
+
+    it("should return an array range", function() {
+      expect(range(3)).to.eql([0,1,2]);
+      expect(range(5)).to.eql([0,1,2,3,4]);
+    });
+
+    it("should accept a start argument", function() {
+      expect(range(3,5)).to.eql([3,4]);
+      expect(range(4,9)).to.eql([4,5,6,7,8]);
+    });
+  });
+
+  describe("rangeObj", function() {
+    it("should return an object", function() {
+      var rangeObj = require("../rangeObj");
+      expect(rangeObj()).to.be.an.object;
+    });
   });
 });

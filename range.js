@@ -1,6 +1,10 @@
-module.exports = function range(count) {
+module.exports = function range(start, end) {
   var theArray = [];
-  for(var i = 0; i < count; ++i) {
+  if(!end) {
+    end = start;
+    start = 0;
+  }
+  for(var i = start; i < end; ++i) {
     theArray.push(i);
   }
   return theArray;
